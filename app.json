@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Mac Miller Song For Your Mood",
+    "slug": "rn-first-app",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-3991530539577871~8901399988"
+      }
+    },
+    "ios": {
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-3991530539577871~3680577489"
+      },
+      "supportsTablet": true
+    }
+  }
+}
