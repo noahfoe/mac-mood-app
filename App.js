@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from 'react';
-import { StyleSheet, Text, TextInput, View, Button, Alert, ImageBackground } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button, Alert, Image, ImageBackground } from 'react-native';
 import SearchableDropdown from 'react-native-searchable-dropdown';
 import { AdMobBanner } from 'expo-ads-admob';
+import { images } from './album-art'
+import SoundPlayer from 'react-native-sound-player';
 import BDE from './assets/bde.mp3';
 import SelfCare from './assets/self.mp3';
 import GoodNews from './assets/good.mp3';
 import DonaldTrump from './assets/trump.mp3';
-import { Howl, Howler } from 'howler';
 
 var items =[
     {
@@ -27,10 +28,6 @@ var items =[
     }
 ];
 
-var audioClips = [
-  {sound: }
-]
-
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -50,7 +47,7 @@ export default class App extends Component {
   displayText(songName) {
     alert(songName);
   }
-
+  
   render() {
     return ( 
       <ImageBackground
@@ -143,22 +140,22 @@ export default class App extends Component {
   /* Different Mood Function */
   macSong() {
     if (this.state.selectedItems.some(item => item.name === 'Happy Music')) {
-      let songs = ['Best Day Ever', 'Kool Aid & Frozen Pizza', 'Nikes on my Feet'];
+      let songs = ['Best Day Ever        Album: Best Day Ever', 'Kool Aid & Frozen Pizza        Album: K.I.D.S', 'Nikes on my Feet        Album: K.I.D.S'];
       let song = songs[Math.floor(Math.random() * songs.length)];
       this.displayText(song)
       this.resetName()
     } else if (this.state.selectedItems.some(item => item.name === 'Sad Music')) {
-        let songs = ['Self Care', 'ROS', 'Stay', 'Whats the Use?'];
+        let songs = ['Self Care        Album: Circles', 'ROS        Album: GO:OD AM', 'Stay        Album: The Divine Feminine', 'Whats the Use?        Album: Swimming'];
         let song = songs[Math.floor(Math.random() * songs.length)];
         this.displayText(song)
         this.resetName()
     } else if (this.state.selectedItems.some(item => item.name === 'Chill Music')) {
-        let songs = ['Good News', 'Claymation (feat. Vinny Radio)', 'The Star Room'];
+        let songs = ['Good News        Album: Swimming', 'Claymation (feat. Vinny Radio)        Album: Watching Movies with the Sound Off', 'The Star Room        Album: Watching Movies with the Sound Off'];
         let song = songs[Math.floor(Math.random() * songs.length)];
         this.displayText(song)
         this.resetName()
     } else if (this.state.selectedItems.some(item => item.name === 'Hype Music')) {
-        let songs = ['Donald Trump', 'REMember', 'Weekend (feat. Miguel)'];
+        let songs = ['Donald Trump        Album: Best Day Ever', 'REMember        Album: Watching Movies with the Sound Off', 'Weekend (feat. Miguel)        Album: GO:OD AM'];
         let song = songs[Math.floor(Math.random() * songs.length)];
         this.displayText(song)
         this.resetName()
