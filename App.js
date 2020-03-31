@@ -6,7 +6,7 @@ import { images } from './album-art'
 import SoundPlayer from 'react-native-sound-player';
 import BDE from './assets/bde.mp3';
 import SelfCare from './assets/self.mp3';
-import GoodNews from './assets/good.mp3';
+import GoodNews from './assets/WhatsTheUse.mp3';
 import DonaldTrump from './assets/trump.mp3';
 
 var items =[

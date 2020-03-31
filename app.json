@@ -33,6 +33,8 @@
         "googleMobileAdsAppId": "ca-app-pub-3991530539577871~3680577489"
       },
       "supportsTablet": true
-    }
+    },
+    "description": "The app asks you which mood you are in, and then gives the name of a random song that evokes that mood from the rapper, Mac Miller",
+    "githubUrl": "https://github.com/noahfoe/mac-mood-app"
   }
 }
