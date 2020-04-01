@@ -1,13 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, useEffect, Platform   } from 'react';
 import { StyleSheet, Text, TextInput, View, Button, Alert, Image, ImageBackground } from 'react-native';
 import SearchableDropdown from 'react-native-searchable-dropdown';
 import { AdMobBanner } from 'expo-ads-admob';
-import { images } from './album-art'
-import SoundPlayer from 'react-native-sound-player';
-import BDE from './assets/bde.mp3';
-import SelfCare from './assets/self.mp3';
-import GoodNews from './assets/WhatsTheUse.mp3';
-import DonaldTrump from './assets/trump.mp3';
+//import { Router, Scene } from 'react-native-router-flux';
+//import LoadingScene from './LoadingScene';
+//import AuthScene from './AuthScene';
 
 var items =[
     {
@@ -49,14 +46,13 @@ export default class App extends Component {
   }
   
   render() {
-    return ( 
+    return (
       <ImageBackground
         source={require('./assets/bg.jpg')}
         style={ styles.img }>
 
       <View style={ styles.screen} >
         <Fragment>
-        
         {/* Title */}
         <View style={ styles.top }>
           <View style={ styles.header }>
