@@ -136,22 +136,22 @@ export default class App extends Component {
   /* Different Mood Function */
   macSong() {
     if (this.state.selectedItems.some(item => item.name === 'Happy Music')) {
-      let songs = ['Best Day Ever        Album: Best Day Ever', 'Kool Aid & Frozen Pizza        Album: K.I.D.S', 'Nikes on my Feet        Album: K.I.D.S'];
+      let songs = ['Best Day Ever        Album: Best Day Ever', 'Kool Aid & Frozen Pizza        Album: K.I.D.S', 'Nikes on my Feet        Album: K.I.D.S', 'Knock Knock        Album: K.I.D.S', 'Senior Skip Day        Album: K.I.D.S', 'The Spins        Album: K.I.D.S', 'Wear My Hat        Album: Best Day Ever', 'Play Ya Cards        Album: Best Day Ever'];
       let song = songs[Math.floor(Math.random() * songs.length)];
       this.displayText(song)
       this.resetName()
     } else if (this.state.selectedItems.some(item => item.name === 'Sad Music')) {
-        let songs = ['Self Care        Album: Circles', 'ROS        Album: GO:OD AM', 'Stay        Album: The Divine Feminine', 'Whats the Use?        Album: Swimming'];
+        let songs = ['Self Care        Album: Circles', 'ROS        Album: GO:OD AM', 'Stay        Album: The Divine Feminine', 'Whats the Use?        Album: Swimming', 'Dang! (feat. Anderson Paak)        Album: The Divine Feminine', '2009        Album: Swimming', 'Hurt Feelings        Album: Swimming', 'Soulmate (feat. Dam Funk)        Album: The Divine Feminine'];
         let song = songs[Math.floor(Math.random() * songs.length)];
         this.displayText(song)
         this.resetName()
     } else if (this.state.selectedItems.some(item => item.name === 'Chill Music')) {
-        let songs = ['Good News        Album: Swimming', 'Claymation (feat. Vinny Radio)        Album: Watching Movies with the Sound Off', 'The Star Room        Album: Watching Movies with the Sound Off'];
+        let songs = ['Good News        Album: Swimming', 'Claymation (feat. Vinny Radio)        Album: Watching Movies with the Sound Off', 'The Star Room        Album: Watching Movies with the Sound Off', 'I Am Who I Am (Killin Time)        Album: Watching Movies with the Sound Off', 'Planet God Damn        Album: The Divine Feminine', 'Skin         Album: The Divine Feminine'];
         let song = songs[Math.floor(Math.random() * songs.length)];
         this.displayText(song)
         this.resetName()
     } else if (this.state.selectedItems.some(item => item.name === 'Hype Music')) {
-        let songs = ['Donald Trump        Album: Best Day Ever', 'REMember        Album: Watching Movies with the Sound Off', 'Weekend (feat. Miguel)        Album: GO:OD AM'];
+        let songs = ['Donald Trump        Album: Best Day Ever', 'REMember        Album: Watching Movies with the Sound Off', 'Weekend (feat. Miguel)        Album: GO:OD AM', 'Frick Park Market        (Single)', 'Brand Name        Album: GO:OD AM', 'Lucky Ass BItch (feat. Juicy J)        Album: Macadelic', 'Programs        (Single)', 'Break The Law        Album: GO:OD AM'];
         let song = songs[Math.floor(Math.random() * songs.length)];
         this.displayText(song)
         this.resetName()
