@@ -11,6 +11,6 @@ The app asks you which mood you are in, and then gives the name of a random song
 * AdMobBanner (Banner Ads)
 
 ## Screenshots
-![image1][screenshots/mac-mood-app1]
-![image2][screenshots/mac-mood-app2]
-![image3][screenshots/mac-mood-app3]
+![image1](screenshots/mac-mood-app1)
+![image2](screenshots/mac-mood-app2)
+![image3](screenshots/mac-mood-app3)
